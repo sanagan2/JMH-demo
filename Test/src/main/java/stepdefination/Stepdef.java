@@ -29,12 +29,12 @@ public void open_the_chrome_and_launch_the_application() throws Throwable {
 	options.addArguments("--js-flags=--expose-gc"); 
 	options.addArguments("--enable-precise-memory-info"); 
 	options.addArguments("--disable-popup-blocking"); 
-	options.addArguments("--disable-default-apps"); 
+	//options.addArguments("--disable-default-apps"); 
 	options.addArguments("test-type=browser"); 
 	options.addArguments("disable-infobars"); 
 	options.addArguments("no-sandbox");
 	options.setExperimentalOption("useAutomationExtension", false);
-	options.addArguments("disable-extensions");
+	//options.addArguments("disable-extensions");
 	 
 	driver = new ChromeDriver(options);
 	driver.manage().window().maximize();

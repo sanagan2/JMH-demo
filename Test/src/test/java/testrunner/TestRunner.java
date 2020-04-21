@@ -9,7 +9,11 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions
 (
 features= "Feature/Test23.feature",
-glue= "stepdefination"
+glue= "stepdefination",
+plugin = {	"html:Test_Report/CucumberReport/Test/html",
+		"json:Test_Report/CucumberReport/Test/json/result.json",
+		"junit:Test_Report/CucumberReport/Test/junit/result.xml"
+}
 )
 public class TestRunner {
 
